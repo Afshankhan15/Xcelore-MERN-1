@@ -66,3 +66,8 @@ Contains logic to handle user requests and interact with the database.
 - Tokens are stored in **localStorage** on the client-side and expire after **1 hour** for enhanced security.
 - **checkAuth Function**: Integrated in protected components to validate tokens and user roles, granting access to endpoints based on role permissions.
 
+### Start the project
+- **Clone project**
+- **Frontend**: cd frontend and then npm install and npm run dev
+- **Backend**: cd backend and then npm install and npm run dev
+
