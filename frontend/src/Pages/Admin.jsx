@@ -139,19 +139,20 @@ const Admin = () => {
         </p>
       </div>
 
-      <table className="bg-white mt-4 min-w-full">
+     <div className="w-full md:w-[90%] mx-auto overflow-x-auto">
+     <table className="w-full border-collapse border border-gray-300 table-fixed">
         <thead className="border-b border-neutral-200 bg-[#332D2D] font-medium text-white dark:border-white/10">
           <tr>
-            <th className="px-3 py-3 text-left text-xs font-semibold ">
+            <th className="border border-gray-300 px-2 md:px-4 py-2 font-sans break-words">
               First Name
             </th>
-            <th className="px-3 py-3 text-left text-xs font-semibold ">
+            <th className="border border-gray-300 px-2 md:px-4 py-2 font-sans break-words">
               Last Name
             </th>
-            <th className="px-3 py-3 text-left text-xs font-semibold ">
+            <th className="border border-gray-300 px-2 md:px-4 py-2 font-sans break-words">
               Email
             </th>
-            <th className="px-3 py-3 text-left text-xs font-semibold ">
+            <th className="border border-gray-300 px-2 md:px-4 py-2 font-sans break-words">
               Actions
             </th>
           </tr>
@@ -165,17 +166,17 @@ const Admin = () => {
                 idx % 2 === 0 ? "bg-gray-100" : "bg-white"
               } hover:bg-gray-200 border-b border-neutral-200 dark:border-white/10 cursor-pointer`}
             >
-              <td className="px-4 text-[15px] text-gray-800">
+              <td className="border border-gray-300 px-2 py-2 text-center break-word">
                 {user.firstName}
               </td>
-              <td className="px-2 py-2 text-[15px] text-gray-800 ">
+              <td className="border border-gray-300 px-2 py-2 text-center break-word">
                 {user.lastName}
               </td>
-              <td className="px-2 py-2 text-[15px] text-gray-800 text-wrap break-words h-auto max-w-[161px]">
+              <td className="border border-gray-300 px-2 py-2 text-center break-words">
                 {user.email}
               </td>
 
-              <td className="flex py-2">
+              <td className="border border-gray-300 px-2 py-2 text-center break-words">
                 <button
                   onClick={() => togglePopupUpdate(user)}
                   className="mr-4"
@@ -199,6 +200,7 @@ const Admin = () => {
           ))}
         </tbody>
       </table>
+     </div>
 
       <div className="flex justify-center items-center my-4">
         <button
